@@ -1,10 +1,15 @@
 package com.quod.antifraude.models;
 
-import com.quod.antifraude.models.ValidaImagemRequest;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "validacoes")
 public class RegistroValidacao {
 
-    private String usuarioId;
+    @Id
+    private String id;
+
+    private Long usuarioId; // Alterado para Long
     private String tipo;
     private boolean valido;
     private ValidaImagemRequest imagem;
@@ -12,7 +17,7 @@ public class RegistroValidacao {
 
     public RegistroValidacao() {}
 
-    public RegistroValidacao(String usuarioId, String tipo, boolean valido, ValidaImagemRequest imagem, String origem) {
+    public RegistroValidacao(Long usuarioId, String tipo, boolean valido, ValidaImagemRequest imagem, String origem) {
         this.usuarioId = usuarioId;
         this.tipo = tipo;
         this.valido = valido;
@@ -21,8 +26,11 @@ public class RegistroValidacao {
     }
 
     // Getters e Setters
-    public String getUsuarioId() { return usuarioId; }
-    public void setUsuarioId(String usuarioId) { this.usuarioId = usuarioId; }
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
+
+    public Long getUsuarioId() { return usuarioId; } // Alterado para Long
+    public void setUsuarioId(Long usuarioId) { this.usuarioId = usuarioId; } // Alterado para Long
 
     public String getTipo() { return tipo; }
     public void setTipo(String tipo) { this.tipo = tipo; }

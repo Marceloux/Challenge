@@ -1,33 +1,16 @@
 package com.quod.antifraude.models;
 
 public class ValidaImagemRequest {
+    private Long usuarioId;
     private String nomeArquivo;
     private String imagemBase64;
 
-    // Construtor padrão (obrigatório para frameworks como Jackson e para instanciar sem parâmetros)
-    public ValidaImagemRequest() {
-    }
+    public Long getUsuarioId() { return usuarioId; }
+    public void setUsuarioId(Long usuarioId) { this.usuarioId = usuarioId; }
 
-    // Construtor completo
-    public ValidaImagemRequest(String nomeArquivo, String imagemBase64) {
-        this.nomeArquivo = nomeArquivo;
-        this.imagemBase64 = imagemBase64;
-    }
+    public String getNomeArquivo() { return nomeArquivo; }
+    public void setNomeArquivo(String nomeArquivo) { this.nomeArquivo = nomeArquivo; }
 
-    // Getters e Setters
-    public String getNomeArquivo() {
-        return nomeArquivo;
-    }
-
-    public void setNomeArquivo(String nomeArquivo) {
-        this.nomeArquivo = nomeArquivo;
-    }
-
-    public String getImagemBase64() {
-        return imagemBase64;
-    }
-
-    public void setImagemBase64(String imagemBase64) {
-        this.imagemBase64 = imagemBase64;
-    }
+    public String getImagemBase64() { return imagemBase64; }
+    public void setImagemBase64(String imagemBase64) { this.imagemBase64 = imagemBase64; }
 }
