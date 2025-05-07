@@ -1,8 +1,7 @@
 package com.quod.antifraude.controllers;
 
-import com.quod.antifraude.models.ValidaImagemRequest;
-import com.quod.antifraude.services.ValidacaoService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.quod.antifraude.dto.BiometriaDigitalRequest;
+import com.quod.antifraude.services.BiometriaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,16 +9,15 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/biometria")
 public class BiometriaController {
 
-    @Autowired
-    private ValidacaoService validacaoService;
+    private final BiometriaService biometriaService;
 
-    @PostMapping("/facial")
-    public ResponseEntity<?> validarFacial(@RequestBody ValidaImagemRequest request) {
-        return validacaoService.processarValidacao("facial", request);
+    public BiometriaController(BiometriaService biometriaService) {
+        this.biometriaService = biometriaService;
     }
 
     @PostMapping("/digital")
-    public ResponseEntity<?> validarDigital(@RequestBody ValidaImagemRequest request) {
-        return validacaoService.processarValidacao("digital", request);
+    public ResponseEntity<?> validarBiometriaDigital(@RequestBody BiometriaDigitalRequest request) {
+        boolean valido = biometriaService.validarDigital(request);
+        return ResponseEntity.ok().body("Biometria digital " + (valido ? "válida" : "inválida"));
     }
 }

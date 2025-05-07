@@ -1,7 +1,10 @@
-com\quod\antifraude\controllers\BiometriaController.class
-com\quod\antifraude\models\ValidaImagemRequest.class
-com\quod\antifraude\models\RegistroValidacao.class
-com\quod\antifraude\services\ValidacaoService.class
-com\quod\antifraude\AntifraudeApplication.class
-com\quod\antifraude\repositories\RegistroRepository.class
-com\quod\antifraude\controllers\DocumentoController.class
+com/quod/antifraude/models/RegistroValidacao.class
+com/quod/antifraude/controllers/DocumentoController.class
+com/quod/antifraude/dto/BiometriaDigitalRequest.class
+com/quod/antifraude/repositories/RegistroRepository.class
+com/quod/antifraude/controllers/BiometriaController.class
+com/quod/antifraude/AntifraudeApplication.class
+com/quod/antifraude/services/ValidacaoService.class
+com/quod/antifraude/dto/BiometriaFacialRequest.class
+com/quod/antifraude/models/ValidaImagemRequest.class
+com/quod/antifraude/services/BiometriaService.class

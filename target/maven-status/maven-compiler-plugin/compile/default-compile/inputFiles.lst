@@ -1,7 +1,10 @@
-F:\challenge\src\main\java\com\quod\antifraude\models\ValidaImagemRequest.java
-F:\challenge\src\main\java\com\quod\antifraude\controllers\DocumentoController.java
-F:\challenge\src\main\java\com\quod\antifraude\AntifraudeApplication.java
-F:\challenge\src\main\java\com\quod\antifraude\services\ValidacaoService.java
-F:\challenge\src\main\java\com\quod\antifraude\repositories\RegistroRepository.java
-F:\challenge\src\main\java\com\quod\antifraude\controllers\BiometriaController.java
-F:\challenge\src\main\java\com\quod\antifraude\models\RegistroValidacao.java
+/Users/caiomessa/challengerfiap/Challenge/src/main/java/com/quod/antifraude/dto/BiometriaDigitalRequest.java
+/Users/caiomessa/challengerfiap/Challenge/src/main/java/com/quod/antifraude/controllers/DocumentoController.java
+/Users/caiomessa/challengerfiap/Challenge/src/main/java/com/quod/antifraude/repositories/RegistroRepository.java
+/Users/caiomessa/challengerfiap/Challenge/src/main/java/com/quod/antifraude/models/RegistroValidacao.java
+/Users/caiomessa/challengerfiap/Challenge/src/main/java/com/quod/antifraude/dto/BiometriaFacialRequest.java
+/Users/caiomessa/challengerfiap/Challenge/src/main/java/com/quod/antifraude/AntifraudeApplication.java
+/Users/caiomessa/challengerfiap/Challenge/src/main/java/com/quod/antifraude/services/ValidacaoService.java
+/Users/caiomessa/challengerfiap/Challenge/src/main/java/com/quod/antifraude/models/ValidaImagemRequest.java
+/Users/caiomessa/challengerfiap/Challenge/src/main/java/com/quod/antifraude/controllers/BiometriaController.java
+/Users/caiomessa/challengerfiap/Challenge/src/main/java/com/quod/antifraude/services/BiometriaService.java

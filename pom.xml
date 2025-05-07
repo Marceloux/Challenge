@@ -20,7 +20,7 @@
     </parent>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
@@ -56,19 +56,21 @@
             <artifactId>mongodb-driver-sync</artifactId>
             <version>4.5.1</version>
         </dependency>
+
     </dependencies>
 
-    <build>
-        <plugins>
-            <!-- Plugin para gerar o JAR do Spring Boot -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.quod.antifraude.AntifraudeApplication</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+<build>
+    <plugins>
+        <!-- Plugin para gerar o JAR do Spring Boot -->
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>2.7.3</version> <!-- ou a versão do Spring Boot que você está usando -->
+            <configuration>
+                <mainClass>com.quod.antifraude.AntifraudeApplication</mainClass>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 
 </project>
